@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: guestbook
-        image: quay.io/ukreddyredhat/test-tekton:demo2
+        image: quay.io/ukreddyredhat/test-tekton:demo3
         ports:
         - name: http-server
           containerPort: 3000
