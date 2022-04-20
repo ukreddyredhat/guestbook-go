@@ -37,16 +37,31 @@ spec:
   type: LoadBalancer
   
 ---
-apiVersion: extensions/v1beta1
-kind: Ingress
+#apiVersion: extensions/v1beta1
+#kind: Ingress
+#metadata:
+ # name: gowebapp
+#spec:
+#  rules:
+ # - host: udaytestdemo.com
+ #   http:
+ #    paths:
+ #    - path: /
+ #      backend:
+ #       serviceName: guestbook
+ #       servicePort: 3000
+        
+---
+
+apiVersion: route.openshift.io/v1
+kind: Route
 metadata:
-  name: gowebapp
+  name: guestbook
 spec:
-  rules:
-  - host: udaytestdemo.com
-    http:
-     paths:
-     - path: /
-       backend:
-        serviceName: guestbook
-        servicePort: 3000
+  port:
+    targetPort: http-server
+  to:
+    kind: Service
+    name: guestbook
+  tls:
+    termination: Reencrypt
