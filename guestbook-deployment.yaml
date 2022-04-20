@@ -42,7 +42,7 @@ metadata:
   name: gowebapp
 spec:
   rules:
-  - host: 20.51.89.60:3000
+  - host: udaytestdemo.com
     http:
      paths:
      - path: /
