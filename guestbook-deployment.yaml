@@ -34,7 +34,6 @@ spec:
     targetPort: http-server
   selector:
     app: guestbook
-  type: ClusterIP
   
 ---
 #apiVersion: extensions/v1beta1
@@ -53,7 +52,7 @@ spec:
         
 ---
 
-apiVersion: route.openshift.io/v1
+apiVersion: route.openshift.io/v2
 kind: Route
 metadata:
   name: guestbook
