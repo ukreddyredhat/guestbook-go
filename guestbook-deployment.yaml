@@ -53,7 +53,7 @@ spec:
         
 ---
 
-apiVersion: route.openshift.io/v2
+apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
   name: guestbook
