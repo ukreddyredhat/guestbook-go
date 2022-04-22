@@ -19,37 +19,17 @@ spec:
         image: quay.io/ukreddyredhat/test-tekton:v6
         imagePullPolicy: Always
         ports:
-        - name: http-server
-          containerPort: 3000
+        - containerPort: 3000
 ---
 kind: Service
 apiVersion: v1
 metadata:
   name: guestbook
-  labels:
-    app: guestbook
 spec:
-  ports:
-  - port: 3000
-    targetPort: http-server
   selector:
     app: guestbook
-  type: LoadBalancer
-  
----
-#apiVersion: extensions/v1beta1
-#kind: Ingress
-#metadata:
- # name: gowebapp
-#spec:
-#  rules:
- # - host: udaytestdemo.com
- #   http:
- #    paths:
- #    - path: /
- #      backend:
- #       serviceName: guestbook
- #       servicePort: 3000
+  ports:
+  - port: 3000
         
 ---
 
@@ -59,9 +39,10 @@ metadata:
   name: guestbook
 spec:
   port:
-    targetPort: http-server
+    targetPort: 3000
   to:
     kind: Service
     name: guestbook
   tls:
-    termination: Reencrypt
+    termination: edge
+    insecureEdgeTerminationPolicy: Allow
