@@ -1,0 +1,32 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  generateName: demo-test-run- #for OpenShift use oc create -f <filename> to automatically generate a random name for pipelinerun. The name will be appended at the end of hyphen (-) as generateName attribute is used.
+spec:
+  pipelineRef:
+    name: demo
+  params:
+    - name: gitUrl
+      value: https://github.com/ukreddyredhat/tekton-demo.git #replace with the private Git repository to be cloned
+    - name: gitRevision
+      value: main #specify the git revision name if not specified (or removed) default master branch is checkedout (here main branch is used)
+    - name: dockerFile
+      value: ./Dockerfile
+    - name: imageUrl
+      value: quay.io/ukreddyredhat/test-tekton # specify the location to where the image has to be pushed sample syntax for other registries are provided below
+    - name: imageTag
+      value: "latest" # this is the tag that will be attached to the image
+    - name: pathToYamlFile
+      value: "./guestbook-deployment.yaml"
+  serviceAccountName: pipeline-account
+  workspaces:
+    - name: git-source
+      volumeClaimTemplate:
+        spec:
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: 500Mi
+    - name: sonar-settings
+      emptyDir: {}
