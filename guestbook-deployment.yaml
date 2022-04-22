@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: guestbook
-        image: quay.io/ukreddyredhat/test-tekton:v1
+        image: quay.io/ukreddyredhat/test-tekton:v2
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
