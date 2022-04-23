@@ -2,23 +2,8 @@
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: TriggerTemplate
 metadata:
-  creationTimestamp: '2022-04-20T18:03:15Z'
-  generation: 5
-  managedFields:
-    - apiVersion: triggers.tekton.dev/v1alpha1
-      fieldsType: FieldsV1
-      fieldsV1:
-        'f:spec':
-          .: {}
-          'f:params': {}
-          'f:resourcetemplates': {}
-      manager: Mozilla
-      operation: Update
-      time: '2022-04-20T18:03:15Z'
   name: trigger-template-demo-iy0t0v
   namespace: uday-test14
-  resourceVersion: '101941907'
-  uid: 9337ea45-73bf-4ab6-b8bb-e7c1d641aa6c
 spec:
   params:
     - name: git-revision
