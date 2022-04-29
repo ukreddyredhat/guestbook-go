@@ -1,1 +1,1 @@
-# this is to show tekton-demo
+# guestbook-go
