@@ -1,6 +1,6 @@
-projectKey=vw-sample-app
+projectKey=singl-repo
 serverUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io
 serverVersion=9.4.0.54424
-dashboardUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/dashboard?id=vw-sample-app
-ceTaskId=AYCGS41c3ylbAFo5qwrx
-ceTaskUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/api/ce/task?id=AYCGS41c3ylbAFo5qwrx
+dashboardUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/dashboard?id=singl-repo
+ceTaskId=AYCGhGQh3ylbAFo5qwsD
+ceTaskUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/api/ce/task?id=AYCGhGQh3ylbAFo5qwsD
