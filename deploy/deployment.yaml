@@ -1,0 +1,48 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: guestbook
+  labels:
+    app: guestbook
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: guestbook
+  template:
+    metadata:
+      labels:
+        app: guestbook
+    spec:
+      containers:
+      - name: guestbook
+        image: quay.io/ukreddyredhat/test-tekton:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: guestbook
+spec:
+  selector:
+    app: guestbook
+  ports:
+  - port: 3000
+        
+---
+
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: guestbook
+spec:
+  port:
+    targetPort: 3000
+  to:
+    kind: Service
+    name: guestbook
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Allow
