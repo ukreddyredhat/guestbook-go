@@ -1,21 +1,21 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: guestbook
+  name: cariad-sample-app
   labels:
-    app: guestbook
+    app: cariad-sample-app
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: guestbook
+      app: cariad-sample-app
   template:
     metadata:
       labels:
-        app: guestbook
+        app: cariad-sample-app
     spec:
       containers:
-      - name: guestbook
+      - name: cariad-sample-app
         image: quay.io/ukreddyredhat/test-tekton:latest
         imagePullPolicy: Always
         ports:
@@ -24,10 +24,10 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: guestbook
+  name: cariad-sample-app
 spec:
   selector:
-    app: guestbook
+    app: cariad-sample-app
   ports:
   - port: 3000
         
@@ -36,13 +36,13 @@ spec:
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: guestbook
+  name: cariad-sample-app
 spec:
   port:
     targetPort: 3000
   to:
     kind: Service
-    name: guestbook
+    name: cariad-sample-app
   tls:
     termination: edge
     insecureEdgeTerminationPolicy: Allow
