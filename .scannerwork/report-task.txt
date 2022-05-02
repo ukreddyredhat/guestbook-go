@@ -2,5 +2,5 @@ projectKey=singl-repo
 serverUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io
 serverVersion=9.4.0.54424
 dashboardUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/dashboard?id=singl-repo
-ceTaskId=AYCGjl3q3ylbAFo5qwsF
-ceTaskUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/api/ce/task?id=AYCGjl3q3ylbAFo5qwsF
+ceTaskId=AYCGlTzn3ylbAFo5qwsG
+ceTaskUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/api/ce/task?id=AYCGlTzn3ylbAFo5qwsG
