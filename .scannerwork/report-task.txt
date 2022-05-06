@@ -1,6 +1,6 @@
-projectKey=multi-repo
+projectKey=demo
 serverUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io
 serverVersion=9.4.0.54424
-dashboardUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/dashboard?id=multi-repo
-ceTaskId=AYCYvA5Y3ylbAFo5qwtI
-ceTaskUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/api/ce/task?id=AYCYvA5Y3ylbAFo5qwtI
+dashboardUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/dashboard?id=demo
+ceTaskId=AYCYzkHz3ylbAFo5qwtg
+ceTaskUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/api/ce/task?id=AYCYzkHz3ylbAFo5qwtg
