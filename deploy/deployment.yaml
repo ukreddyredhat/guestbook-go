@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cariad-sample-app
-        image: quay.io/ukreddyredhat/test-tekton:c265596dca0e1d80fc76cb1a2f118541411463c8
+        image: quay.io/ukreddyredhat/test-tekton:b2ab9f6c41ecf61b4a8fc7787b401c2d1aa5192b
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
