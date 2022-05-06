@@ -2,5 +2,5 @@ projectKey=demo
 serverUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io
 serverVersion=9.4.0.54424
 dashboardUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/dashboard?id=demo
-ceTaskId=AYCY0XIO3ylbAFo5qwti
-ceTaskUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/api/ce/task?id=AYCY0XIO3ylbAFo5qwti
+ceTaskId=AYCY0yTT3ylbAFo5qwtj
+ceTaskUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/api/ce/task?id=AYCY0yTT3ylbAFo5qwtj
