@@ -1,12 +1,12 @@
 $(document).ready(function() {
   var headerTitleElement = $("#header h1");
-  var entriesElement = $("#guestbook-entries");
-  var formElement = $("#guestbook-form");
-  var submitElement = $("#guestbook-submit");
-  var entryContentElement = $("#guestbook-entry-content");
-  var hostAddressElement = $("#guestbook-host-address");
+  var entriesElement = $("#demo-entries");
+  var formElement = $("#demo-form");
+  var submitElement = $("#demo-submit");
+  var entryContentElement = $("#demo-entry-content");
+  var hostAddressElement = $("#demo-host-address");
 
-  var appendGuestbookEntries = function(data) {
+  var appenddemoEntries = function(data) {
     entriesElement.empty();
     $.each(data, function(key, val) {
       entriesElement.append("<p>" + val + "</p>");
@@ -18,7 +18,7 @@ $(document).ready(function() {
     var entryValue = entryContentElement.val()
     if (entryValue.length > 0) {
       entriesElement.append("<p>...</p>");
-      $.getJSON("rpush/guestbook/" + entryValue, appendGuestbookEntries);
+      $.getJSON("rpush/demo/" + entryValue, appenddemoEntries);
     }
     return false;
   }
@@ -37,10 +37,10 @@ $(document).ready(function() {
   hostAddressElement.append(document.URL);
 
   // Poll every second.
-  (function fetchGuestbook() {
-    $.getJSON("lrange/guestbook").done(appendGuestbookEntries).always(
+  (function fetchdemo() {
+    $.getJSON("lrange/demo").done(appenddemoEntries).always(
       function() {
-        setTimeout(fetchGuestbook, 1000);
+        setTimeout(fetchdemo, 1000);
       });
   })();
 });
