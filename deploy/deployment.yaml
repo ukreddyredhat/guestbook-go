@@ -1,22 +1,22 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: cariad-sample-app
+  name: sample-app-demo
   labels:
-    app: cariad-sample-app
+    app: sample-app-demo
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: cariad-sample-app
+      app: sample-app-demo
   template:
     metadata:
       labels:
-        app: cariad-sample-app
+        app: sample-app-demo
     spec:
       containers:
-      - name: cariad-sample-app
-        image: quay.io/ukreddyredhat/test-tekton:latest
+      - name: sample-app-demo
+        image: quay.io/ukreddyredhat/test-tekton:vv
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
@@ -24,10 +24,10 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: cariad-sample-app
+  name: sample-app-demo
 spec:
   selector:
-    app: cariad-sample-app
+    app: sample-app-demo
   ports:
   - port: 3000
         
@@ -36,13 +36,13 @@ spec:
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: cariad-sample-app
+  name: sample-app-demo
 spec:
   port:
     targetPort: 3000
   to:
     kind: Service
-    name: cariad-sample-app
+    name: sample-app-demo
   tls:
     termination: edge
     insecureEdgeTerminationPolicy: Allow
