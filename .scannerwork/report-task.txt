@@ -2,5 +2,5 @@ projectKey=demo
 serverUrl=https://devstack.vwgroup.com/sonar
 serverVersion=9.4.0.54424
 dashboardUrl=https://devstack.vwgroup.com/sonar/dashboard?id=demo
-ceTaskId=AYC3ob-uxLggkdhPtiNw
-ceTaskUrl=https://devstack.vwgroup.com/sonar/api/ce/task?id=AYC3ob-uxLggkdhPtiNw
+ceTaskId=AYC3qICIxLggkdhPtiO9
+ceTaskUrl=https://devstack.vwgroup.com/sonar/api/ce/task?id=AYC3qICIxLggkdhPtiO9
