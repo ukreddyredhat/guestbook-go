@@ -1,6 +1,6 @@
 projectKey=demo
-serverUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io
+serverUrl=https://devstack.vwgroup.com/sonar
 serverVersion=9.4.0.54424
-dashboardUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/dashboard?id=demo
-ceTaskId=AYC3NjqF3ylbAFo5qwv2
-ceTaskUrl=http://sonarqube-uday-test14.apps.xdwl9w30.westus2.aroapp.io/api/ce/task?id=AYC3NjqF3ylbAFo5qwv2
+dashboardUrl=https://devstack.vwgroup.com/sonar/dashboard?id=demo
+ceTaskId=AYC3ob-uxLggkdhPtiNw
+ceTaskUrl=https://devstack.vwgroup.com/sonar/api/ce/task?id=AYC3ob-uxLggkdhPtiNw
