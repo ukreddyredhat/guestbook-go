@@ -1,5 +1,0 @@
-sonar.login=c6397fde7aea0db37b9466ee93e809cbf172edc7
-sonar.projectKey=CI-CD-demo
-sonar.host.url=https://devstack.vwgroup.com/sonar/
-sonar.sources=.
-sonar.qualitygate.wait=true
