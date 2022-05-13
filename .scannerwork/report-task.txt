@@ -2,5 +2,5 @@ projectKey=CI-CD-demo
 serverUrl=https://devstack.vwgroup.com/sonar
 serverVersion=9.4.0.54424
 dashboardUrl=https://devstack.vwgroup.com/sonar/dashboard?id=CI-CD-demo
-ceTaskId=AYC4Cr5bxLggkdhPtieb
-ceTaskUrl=https://devstack.vwgroup.com/sonar/api/ce/task?id=AYC4Cr5bxLggkdhPtieb
+ceTaskId=AYC8K7j5xLggkdhPtjjW
+ceTaskUrl=https://devstack.vwgroup.com/sonar/api/ce/task?id=AYC8K7j5xLggkdhPtjjW
