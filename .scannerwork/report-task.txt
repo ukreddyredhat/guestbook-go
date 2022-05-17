@@ -2,5 +2,5 @@ projectKey=VWAC-Ci-Cd
 serverUrl=https://devstack.vwgroup.com/sonar
 serverVersion=9.4.0.54424
 dashboardUrl=https://devstack.vwgroup.com/sonar/dashboard?id=VWAC-Ci-Cd
-ceTaskId=AYDRNzTQxLggkdhPtnoY
-ceTaskUrl=https://devstack.vwgroup.com/sonar/api/ce/task?id=AYDRNzTQxLggkdhPtnoY
+ceTaskId=AYDRW914xLggkdhPtnwL
+ceTaskUrl=https://devstack.vwgroup.com/sonar/api/ce/task?id=AYDRW914xLggkdhPtnwL
