@@ -14,12 +14,12 @@ spec:
       labels:
         app: cariad-sample-app
     spec:
+      imagePullSecrets:
+      - name: default-dockercfg-5k7gn
       containers:
       - name: cariad-sample-app
         image: aroresidency.azurecr.io/test-tekton:cde4db390da6611d19bf4bf1d1f234205d122955
         imagePullPolicy: Always
-      imagePullSecrets:
-      - name: default-dockercfg-5k7gn
         ports:
         - containerPort: 3000
 ---
