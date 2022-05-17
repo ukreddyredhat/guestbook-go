@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cariad-sample-app
-        image: aroresidency.azurecr.io/test-tekton:f6f9e204b2d1ff366b8b843c4837ae192e8f28fc
+        image: aroresidency.azurecr.io/test-tekton:03fa5ed546df77c180b2ff3ad6ba82768e24c481
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
