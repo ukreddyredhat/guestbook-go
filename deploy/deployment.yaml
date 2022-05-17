@@ -15,7 +15,7 @@ spec:
         app: cariad-sample-app
     spec:
       imagePullSecrets:
-      - name: default-dockercfg-5k7gn
+      - name: acr-pull
       containers:
       - name: cariad-sample-app
         image: aroresidency.azurecr.io/test-tekton:f6f9e204b2d1ff366b8b843c4837ae192e8f28fc
