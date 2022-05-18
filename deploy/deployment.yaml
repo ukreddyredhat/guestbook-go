@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: sample-app-demo
-        image: quay.io/ukreddyredhat/test-tekton:v
+        image: quay.io/ukreddyredhat/test-tekton:71b23a381840c7da647636dc2cad690bca977d1b
         imagePullPolicy: Always
         ports:
         - containerPort: 3000

@@ -1,6 +1,6 @@
-projectKey=VWAC-Ci-Cd
-serverUrl=https://devstack.vwgroup.com/sonar
+projectKey=Redhat-Demo
+serverUrl=http://sonarqube-tekton-argocd.apps.cluster-wcjlz.dynamic.opentlc.com
 serverVersion=9.4.0.54424
-dashboardUrl=https://devstack.vwgroup.com/sonar/dashboard?id=VWAC-Ci-Cd
-ceTaskId=AYDTgSZ3C5Cq3up-H7JL
-ceTaskUrl=https://devstack.vwgroup.com/sonar/api/ce/task?id=AYDTgSZ3C5Cq3up-H7JL
+dashboardUrl=http://sonarqube-tekton-argocd.apps.cluster-wcjlz.dynamic.opentlc.com/dashboard?id=Redhat-Demo
+ceTaskId=AYDYanxlAYKq_icMRkjB
+ceTaskUrl=http://sonarqube-tekton-argocd.apps.cluster-wcjlz.dynamic.opentlc.com/api/ce/task?id=AYDYanxlAYKq_icMRkjB
