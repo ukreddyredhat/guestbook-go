@@ -2,5 +2,5 @@ projectKey=Redhat-Demo
 serverUrl=http://sonarqube-tekton-argocd.apps.cluster-wcjlz.dynamic.opentlc.com
 serverVersion=9.4.0.54424
 dashboardUrl=http://sonarqube-tekton-argocd.apps.cluster-wcjlz.dynamic.opentlc.com/dashboard?id=Redhat-Demo
-ceTaskId=AYDYanxlAYKq_icMRkjB
-ceTaskUrl=http://sonarqube-tekton-argocd.apps.cluster-wcjlz.dynamic.opentlc.com/api/ce/task?id=AYDYanxlAYKq_icMRkjB
+ceTaskId=AYDY219yAYKq_icMRkjD
+ceTaskUrl=http://sonarqube-tekton-argocd.apps.cluster-wcjlz.dynamic.opentlc.com/api/ce/task?id=AYDY219yAYKq_icMRkjD
