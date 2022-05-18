@@ -1,3 +1,2 @@
-# vw-application-code-repo
+# CI/CD pipelines with Tekton-ArgoCD
 
-Tekton CI pipeline testings
