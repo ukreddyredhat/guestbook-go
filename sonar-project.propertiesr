@@ -1,5 +1,5 @@
-sonar.login=c6397fde7aea0db37b9466ee93e809cbf172edc7
-sonar.projectKey=VWAC-Ci-Cd
-sonar.host.url=https://devstack.vwgroup.com/sonar/
+sonar.login=74291089f5e01cb4f2b272a6d4ea4d88795dcb5a
+sonar.projectKey=Redhat-Ci-CD
+sonar.host.url=http://sonarqube-tekton-argocd.apps.cluster-wcjlz.dynamic.opentlc.com/
 sonar.sources=.
 sonar.qualitygate.wait=true
