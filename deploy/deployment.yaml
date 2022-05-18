@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: sample-app-demo
-        image: aroresidency.azurecr.io/test-tekton:03fa5ed546df77c180b2ff3ad6ba82768e24c481
+        image: quay.io/ukreddyredhat/test-tekton:v
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
