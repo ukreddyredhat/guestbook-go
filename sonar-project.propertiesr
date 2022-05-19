@@ -1,4 +1,4 @@
-sonar.login=74291089f5e01cb4f2b272a6d4ea4d88795dcb5a
+sonar.login=942e8033bf2580126b182574ca1e2135479b13d7
 sonar.projectKey=Redhat-Demo
 sonar.host.url=http://sonarqube-tekton-argocd.apps.cluster-wcjlz.dynamic.opentlc.com/
 sonar.sources=.
