@@ -2,5 +2,5 @@ projectKey=acn-rbg-demo
 serverUrl=http://sonarqube-asg-redhat-gitops-demo.apps.cluster-zzp5q.dynamic.opentlc.com
 serverVersion=9.5.0.56709
 dashboardUrl=http://sonarqube-asg-redhat-gitops-demo.apps.cluster-zzp5q.dynamic.opentlc.com/dashboard?id=acn-rbg-demo
-ceTaskId=AYIbwPnqYu16t7ONKn-K
-ceTaskUrl=http://sonarqube-asg-redhat-gitops-demo.apps.cluster-zzp5q.dynamic.opentlc.com/api/ce/task?id=AYIbwPnqYu16t7ONKn-K
+ceTaskId=AYIbxMjdYu16t7ONKn-L
+ceTaskUrl=http://sonarqube-asg-redhat-gitops-demo.apps.cluster-zzp5q.dynamic.opentlc.com/api/ce/task?id=AYIbxMjdYu16t7ONKn-L
