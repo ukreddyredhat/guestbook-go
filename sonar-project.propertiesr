@@ -1,5 +1,5 @@
-sonar.login=4298190c06540213845bd9585e9bfc4a8983fb81
-sonar.projectKey=Redhat-Demo
-sonar.host.url=http://sonarqube-tekton-argocd.apps.cluster-wcjlz.dynamic.opentlc.com/
+sonar.login=squ_d50adfb3b1d71575264699a7f158dc54303c0974
+sonar.projectKey=acn-rbg-demo
+sonar.host.url=http://sonarqube-asg-redhat-gitops-demo.apps.cluster-zzp5q.dynamic.opentlc.com/
 sonar.sources=.
 sonar.qualitygate.wait=true
