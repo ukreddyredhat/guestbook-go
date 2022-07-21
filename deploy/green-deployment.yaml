@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redhat-gitops-demo-v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redhat-gitops-demo
+      version: v2
+  template:
+    metadata:
+      labels:
+        app: "redhat-gitops-demo"
+        version: "v2"
+    spec:
+      containers:
+        - name: redhat-gitops-demo
+          image: quay.io/ukreddyredhat/test-tekton:v2
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 3000
+              name: http
