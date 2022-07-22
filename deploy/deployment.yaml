@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: redhat-gitops-demo
-        image: quay.io/ukreddyredhat/test-tekton:48066a1cf8c0addfb789631f6f7e4b9705379898
+        image: quay.io/ukreddyredhat/test-tekton:vv
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
