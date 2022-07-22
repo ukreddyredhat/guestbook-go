@@ -1,0 +1,48 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: redhat-gitops-demo
+  labels:
+    app: redhat-gitops-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: redhat-gitops-demo
+  template:
+    metadata:
+      labels:
+        app: redhat-gitops-demo
+    spec:
+      containers:
+      - name: redhat-gitops-demo
+        image: quay.io/ukreddyredhat/test-tekton:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: redhat-gitops-demo
+spec:
+  selector:
+    app: redhat-gitops-demo
+  ports:
+  - port: 3000
+        
+---
+
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: redhat-gitops-demo
+spec:
+  port:
+    targetPort: 3000
+  to:
+    kind: Service
+    name: redhat-gitops-demo
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Allow
